@@ -1,0 +1,88 @@
+movil = 'screen and (max-width 576px)'
+tablet = 'screen and (max-width 768px)'
+
+footer
+    width 100%
+    height: fit-content
+    display: flex
+    justify-content: center
+    text-align: start
+    margin-top 70px
+    background: #fac000
+    padding-bottom: 20px
+    padding-top: 20px
+
+    .footer-container
+        width 70%
+        height 100%
+        display: flex
+        @media movil
+            width: 90%
+            
+
+    .footer-logo
+        width: 50%
+        display flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        margin auto
+        text-align: center
+
+        img
+            width: 150px
+            height auto 
+            margin-top auto
+            margin-bottom: 15px
+            @media tablet
+                width: 120px
+                @media movil
+                    width: 100px
+
+        label
+            font-size: 15px
+            margin-left 15px
+            margin-right 15px
+            margin-top: 15px
+            margin-bottom: auto
+            @media movil
+                font-size: 13px
+
+            
+
+
+    .contactUs,.social-networks
+        font-size: 25px
+        height 100%
+        width: 33%
+        font-weight: 700
+        display flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        @media tablet
+            font-size: 20px
+            @media movil
+                font-size: 18px
+
+        
+    ul
+        margin-left 15px
+        margin-right 15px
+        margin auto
+
+    .footer-list
+        list-style none
+        height: 100%
+        margin auto
+
+
+    .footer-style
+        font-weight: 0
+        margin 2px
+
+    .center
+        display flex
+
+        
+  

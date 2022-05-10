@@ -1,0 +1,157 @@
+movil = 'screen and (max-width 576px)'
+tablet = 'screen and (max-width 768px)'
+
+header
+  height 100vh
+  position relative
+
+.contenedor-header
+  width 100%
+  height 100%
+  display flex
+  justify-content center
+  text-align center
+  
+
+  .banner
+    display flex
+    flex-direction column 
+    height 90vh
+    width 100%
+    padding-top 90px
+    padding-right  70px
+    padding-left 70px
+    padding-bottom  70px
+    margin-top -40px
+    z-index 1
+    @media movil
+      margin-top 45px
+      z-index 0
+      font-size 20px
+      padding: 0
+    @media tablet
+      margin-top 45px
+      z-index 0
+      font-size 20px
+      padding: 0  
+    
+
+  h1,h2,h4
+    margin-top auto
+    margin-bottom  auto
+
+.divide
+  height 4vh
+  display none
+  background white
+  position absolute
+  width 100%
+  margin 0
+  border 1px solid white
+  bottom 0
+  @media movil
+    display block
+  @media tablet
+    display block
+.home
+  width 100%
+  height 80px
+  background white
+  position absolute
+  bottom 0
+  border-top 2px solid white
+  display flex
+  justify-content center
+  @media movil
+    top 0
+    justify-content: flex-end
+  @media tablet
+    top 0
+    justify-content: flex-end
+
+  .contenido-list
+    width 50%
+    height 100%
+    display flex
+    align-items center
+    justify-content center
+    text-align center
+    @media movil
+      z-index 5
+      justify-content: flex-end
+    @media tablet
+      z-index 5
+      justify-content: flex-end
+
+  .d-flex-list
+    display flex
+    list-style none
+    @media tablet
+      display none
+      font-size 60px
+      width 100%
+      background rgba(255, 255, 255, 0.952)
+      position absolute
+      top 78  px
+      z-index 5
+      flex-direction column
+      text-align center
+      align-items center
+      justify-content: center
+
+  li
+    width 100%
+    height: 40px
+    display: flex
+    text-align center
+    align-items center
+    justify-content: center
+
+
+  .d-flex-list li:hover
+    background rgb(218, 218, 218)   
+
+
+  .link-style   
+    font-size 15px
+    margin 20px
+    text-transform uppercase
+    text-decoration none
+    color rgb(131, 131, 131)
+    font-weight 100
+    font-family 'Roboto Mono', monospace
+    z-index 2
+    @media movil
+      margin 10px
+      font-size 20px
+      width: 100%
+      
+    
+
+  .fa-bars
+    display none
+    @media movil
+      display flex
+      cursor pointer
+      margin-right: 20px
+    @media tablet
+      display flex
+      cursor pointer
+      margin-right: 20px
+
+  .link-stylehover
+    font-weight 700
+
+
+ .img-header img
+  width 100%
+  height 99%
+  object-fit cover
+  filter blur(2px)
+  z-index 0
+  position absolute
+  top 0
+  left 0
+
+  .openMenu
+    display flex

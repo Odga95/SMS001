@@ -1,0 +1,27 @@
+extends includes/layout
+
+block body-header
+  include includes/header
+
+block head-title
+
+block body-main
+    .container
+      .border-m.border-color-black
+        .contact
+          h1.fontfam3 Contacto
+          .d-flex-contact
+            section
+              p.font-xs.fontfam3 ¡Hola! Para ponerte en contacto con nosotros, rellena este formulario o envíanos un email a <span>ejemplo@ejemplo.com</span>       
+            aside
+              form(id='contactForm' name='contactForm').form
+                input#name(type='text', placeholder='Nombre' name='name' title='nombre', required)
+                input#email(type='email', placeholder='Email' name='email' title='email' required)
+                input#tel.form-control(type='text', placeholder='Teléfono' name='tel' title='telefono')
+                textarea#msg(type='text', placeholder='Mensaje' name='msg' title='mensaje')
+                input#bpriva(type='submit' value="submit")
+         
+
+
+block body-footer
+  include includes/footer

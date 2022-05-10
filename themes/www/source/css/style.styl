@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200&family=Pacifico&family=Roboto+Mono:wght@300&display=swap');
+
+font-xxs = 0.5em
+font-xs = 0.7em
+font-s = 1em
+font-m = 1.2em
+font-l = 1.4em
+font-xl = 2em
+font-xxl = 3em
+
+fontfam1 = 'Josefin Sans', sans-serif
+fontfam2 = 'Aclonica', sans-serif
+fontfam3 = 'Roboto Mono', monospace
+fontfam4 = 'Pacifico', cursive
+fontfam5 = 'Oswald', sans-serif
+fontfam6 = 'Anton', sans-serif
+
+color-white = #ffffff
+color-black = #000000
+color-border = #bebebe
+color-letter = #6e6d6d
+color-first = #cb6cec
+color-second = #00c2cb
+color-third = #d58aeb
+
+
+movil = 'screen and (min-width 576px)'
+tablet = 'screen and (min-width 768px)'
+escritorio-s = 'screen and (min-width 992px)'
+escritorio-m = 'screen and (min-width 1200px)'
+escritorio-l = 'screen and (min-width 1400px)'
+
+*
+  margin 0px
+  padding 0px
+  -webkit-box-sizing border-box!important
+  -moz-box-sizing border-box!important
+  box-sizing border-box!important
+
+vendor(prop, args)
+  -webkit-{prop} args
+  -moz-{prop} args
+  {prop} args
+
+border-radius()
+  vendor('border-radius', arguments)
+
+transform()
+  vendor('transform', arguments)  
+
+transition()
+  vendor('transition', arguments)
+
+//Colores
+
+.color-white
+  color color-white
+.color-black
+  color color-black
+.color-letter
+  color color-letter
+.color-first
+  color color-first
+.color-second
+  color color-second
+.color-third
+  color color-third
+
+
+.border-color-white
+  border-color color-white
+.border-color-black
+  border-color color-black
+.border-color-letter
+  border-color color-letter
+.border-color-first
+  border-color color-first
+.border-color-second
+  border-color color-second
+.border-color-third
+  border-color color-third
+
+
+.back-color-white
+  background-color color-white
+.back-color-black
+  background-color color-black
+.back-color-letter
+  background-color color-letter
+.back-color-first
+  background-color color-first
+.back-color-second
+  background-color color-second
+.back-color-third
+  background-color color-third
+
+//Estilos generales
+
+.border-s
+  border 1px solid
+
+.border-m
+  border 2px solid
+
+.border-l
+  border 3px solid
+
+//Letras
+
+.fontfam1
+  font-family fontfam1
+.fontfam2
+  font-family fontfam2
+.fontfam3
+  font-family fontfam3
+.fontfam4
+  font-family fontfam4
+.fontfam5
+  font-family fontfam5
+.fontfam6
+  font-family fontfam6
+
+.font-xxs
+  font-size font-xxs
+.font-xs
+  font-size font-xs
+.font-s
+  font-size font-s
+.font-m
+  font-size font-m
+.font-l
+  font-size font-l
+.font-xl
+  font-size font-xl
+.font-xxl
+  font-size font-xxl
+
+
+//Estilos
+
+body
+  color color-letter
+  font-family fontfam1
+  font-size font-l
+
+.container
+  padding 0 20px
+  max-width 1200px
+  margin auto
+
+.alto
+  height 80px
+  background color-white
+  @media tablet
+    height 160px
+
+
+// Home
+    .container-home
+      width 100%
+      height 80vh
+      display flex
+      justify-content center
+      text-align center
+      margin-top 20px
+      position relative
+
+      .behind
+        width 100%
+        height 99%
+        object-fit cover
+        position absolute
+        z-index 0
+        margin-top 2px
+        top 0
+        left 0
+      
+      .gradiente
+        display flex
+        flex-direction column 
+        z-index 1
+        width 100%
+        height 100%
+        background rgb(255,255,255)
+        background -moz-linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(170,170,170,0) 16%, rgba(179,179,179,0) 48%, rgba(191,191,191,0) 84%, rgba(255,255,255,1) 100%)
+        background -webkit-linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(170,170,170,0) 16%, rgba(179,179,179,0) 48%, rgba(191,191,191,0) 84%, rgba(255,255,255,1) 100%)
+        background linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(170,170,170,0) 16%, rgba(179,179,179,0) 48%, rgba(191,191,191,0) 84%, rgba(255,255,255,1) 100%)
+
+      .banner-home
+        display flex
+        flex-direction column 
+        width 100%
+        height 40vh
+        background rgba(58, 58, 58, 0.445)
+        margin-top auto
+        margin-bottom  auto
+        justify-content center
+
+        p
+          font-size 18px
+          color white
+          @media movil
+            font-size 25px 
+            @media tablet
+              font-size 28px
+            
+
+    .card-content p
+      margin-top auto
+      margin-bottom  auto
+      font-size 15px
+      color rgba(0, 0, 0, 0.959)
+      @media movil
+        font-size 18px
+        @media tablet
+          font-size 25px
+
+
+    .container-menu
+      width 100%
+      height fit-content
+      display flex
+      flex-direction column
+      column-count 3
+      justify-content center
+      align-items center
+
+      .card
+        display flex
+        flex-direction column
+        align-items center
+        width 100% 
+        margin-top 50px
+        height fit-content
+        @media movil
+          width 85% 
+        @media tablet
+          width 75% 
+
+        .card-img
+          width 80% 
+          height 300px
+          margin-bottom 20px
+          @media movil
+            height 350px
+          @media tablet
+            height 400px
+        img
+          border-radius 15px
+          width 100%
+          height 100%
+          object-fit cover
+
+        .card-info
+          width 60%
+          .card-title
+            text-transform capitalize
+            margin-bottom 10px
+            font-size 18px
+
+          .text-card 
+            font-size 18px
+            display -webkit-box
+            width 100%
+            height 100%
+            line-height 1
+            -webkit-line-clamp 5
+            -webkit-box-orient vertical
+            overflow hidden
+            text-overflow ellipsis
+          
+        .but-content 
+          width 100%
+          text-align left  
+
+        .continue
+          width fit-content
+          background-color #fac000
+          font-size 10px
+          color white
+          padding 10px 16px
+          margin 12px 0
+          border none
+          border-radius 5px
+          cursor pointer
+          font-weight 600
+          text-transform uppercase
+          
+      hr
+        width 40%
+        height 1px
+        border 0
+        background #fac000
+        margin 10px 70px
+
+
+      .blog-logo
+        margin-top 50px
+        width 200px
+        max-width 100%
+        @media movil
+          width 250px
+        @media tablet
+          width 300px
+        img
+          width 100%
+      
+// contact
+.container .border-m
+  border-radius 15px
+  margin-top 50px
+
+.contact
+  margin 20px 20px
+  background white
+  text-align center
+
+.d-flex-contact
+  display flex
+  margin 20px 0px
+
+section 
+  width 49%
+  margin-right 1%
+
+aside 
+  width 49%
+  margin-left 1%
+
+  .form 
+    display flex
+    flex-direction column
+
+    input, textarea
+      width 100%
+      padding 12px 20px
+      margin 8px 0
+      display inline-block
+      border 1px solid #ccc
+      border-radius 4px
+      font-family fontfam3
+      outline none
+  
+    inputfocus,textareafocus
+          background rgba(218, 218, 218, 0.158)
+    
+    textarea
+      max-width 100%
+      height 300px
+      
+
+    #bpriva
+      width 100%
+      background-color #fac000
+      color white
+      padding 14px 20px
+      margin 8px 0
+      border none
+      border-radius 4px
+      cursor pointer
+      font-weight 600
+      letter-spacing 3px
+      text-transform uppercase
+
+    #bprivahover 
+      background-color #e6b000
+
+// 404
+
+.container-404
+  width 100%
+  height 100vh
+  background #fac000
+  margin-bottom -70px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+  .mensaje-404
+    text-align: center
+    .text-404 
+      font-weight: 900
+  
+    
+    .number-404
+      display: flex
+      justify-content: center
+      height: 70px
+
+  h2
+      margin 4px
+  h3 
+    margin-top 7px
+  p 
+    text-align: center
+    font-weight: 500
+    
+
+// about
+
+.container-about
+  display  block
+  width 100%
+  text-align: center  
+  
+  img
+    width: 90%
+
+  .text-left
+    margin: 0px 5%
+    text-align: left
+
+
+// Sliders
+
+.slider
+  margin-top 25px
+  width: 100%
+  display: flex
+  flex-direction: column
+  text-align: center
+  justify-content: center
+  align-items: center
+
+  .slider-img-container
+    width: 90%
+    height: 250px
+    @media movil
+      width: 85%
+      height: 350px
+    @media tablet
+      width: 70%
+      height: 400px
+
+    img
+      height 100%
+      object-fit: cover
+
+  .mySlide 
+    display none
+    width: 100%
+
+.slider-img-container
+  width: 90%
+
+.buttons-container
+  margin 15px
+
+  .slider-button
+    background-color #fac000
+    color white
+    padding 8px 10px
+    margin 8px 4px
+    border none
+    border-radius 4px
+    cursor pointer
+    font-weight 600
+    letter-spacing 3px
+    text-transform uppercase
+
+
+
+
+
+
+
+
+
+    
+

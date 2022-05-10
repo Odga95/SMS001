@@ -1,0 +1,38 @@
+doctype html
+html(lang='es')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0, minimun-scale=1.0')
+    block head-meta
+
+    block head-title
+
+    link(href='/favicon.ico' type='image/x-icon' rel='shortcut icon')
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin)
+    link(href='https://fonts.googleapis.com/css2?family=Aclonica&family=Josefin+Sans:wght@300&display=swap' rel='stylesheet')
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer")
+    link(rel='stylesheet' href='/css/style.css')
+    link(rel='stylesheet' href='/css/header.css')
+    link(rel='stylesheet' href='/css/footer.css')
+    link(rel='stylesheet' href='/css/custom.css')
+    link(rel='stylesheet' href='/css/cookies-consent.css')
+
+    block head-link
+
+
+  body
+    block body-header
+    block body-main
+    block body-footer
+    block body-script
+    
+    script(type='application/javascript').
+      var apiUrl = !{JSON.stringify(config.apiUrl)};
+      var siteId = !{JSON.stringify(config.site)};
+      var contactUrl = apiUrl + '/sites/' + siteId + '/contact';
+      console.log(contactUrl);
+
+    script(src='/js/cookies-config.js')
+    script(src='/js/cookies-consent.js')
+    script(src='/js/general.js')
