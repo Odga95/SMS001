@@ -6,7 +6,6 @@ block body-header
 block head-title
 
 block body-main
-
   .container-home
     img.behind(src="https://img.freepik.com/foto-gratis/deliciosa-comida-vietnamita-que-incluye-pho-ga-fideos-rollitos-primavera-mesa-blanca_181624-34062.jpg?t=st=1651781407~exp=1651782007~hmac=e8c25c1618a10338fd2cbeba8025f2f3243372df4f524d50c492c76645a969d7&w=740" alt="" srcset="")
 
@@ -40,20 +39,16 @@ block body-main
     h3 Quidem eos perferendis in voluptas
     p Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, sapiente, architecto quidem, consequatur aut atque nihil beatae expedita aperiam deleniti quia. Qui natus praesentium eveniet nulla sit hic expedita vitae.
 
-  .container 
-    .container-about
-      .slider 
-        .slider-img-container
-            img.mySlide(src="https://img.freepik.com/foto-gratis/vista-lateral-chef-flameando-plato-cocina_23-2148763118.jpg?t=st=1652151881~exp=1652152481~hmac=82740a3100b0302007c83dca9ab3dabef79d1ccf58ce0b7e496f91fc501229d1&w=740")
-            img.mySlide(src="https://img.freepik.com/foto-gratis/chef-macho-cortando-tomates-cocina_23-2148763116.jpg?w=740&t=st=1652154508~exp=1652155108~hmac=359afdefa8419c6811ef4ee84b613b28a4043210252ffe53b15cb7e7b51507fa")
-            img.mySlide(src="https://img.freepik.com/foto-gratis/chef-cocina_23-2148006182.jpg?w=740&t=st=1652154506~exp=1652155106~hmac=566906431842fe8de637a05fc2fa64699742a589c5f9e0bf85619618e5b63415")
-            img.mySlide(src="https://img.freepik.com/foto-gratis/vista-frontal-chef-preparando-masa_23-2148763226.jpg?w=740&t=st=1652154570~exp=1652155170~hmac=f46708bf910f424b18273013f3ab3caf3422c67fec9e12ffa66bddc2a0333441")
-        
-            .buttons-container
-                button.slider-button(onclick="plusDivs(-1)") Prev
-                button.slider-button(onclick="plusDivs(1)") Next
 
-
+  .banner-text2 
+    .center
+      .text
+        h3 Quidem eos perferendis in voluptas
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, sapiente, architecto quidem, consequatur aut atque nihil beatae expedita aperiam deleniti quia. Qui natus praesentium eveniet nulla sit hic expedita vitae.
+      .text-img 
+        img(src="https://img.freepik.com/foto-gratis/chef-cocina_23-2148006182.jpg?w=740&t=st=1652154506~exp=1652155106~hmac=566906431842fe8de637a05fc2fa64699742a589c5f9e0bf85619618e5b63415", alt="")
+      
+  
   .banner-text-img 
     .banner-title.color-white
       h3 Deserunt libero in debitis consequatur quaerat officia
@@ -72,5 +67,19 @@ block body-main
         li
           img(src="https://img.freepik.com/vector-gratis/fondo-coche-comida_23-2147760022.jpg?w=740&t=st=1652243861~exp=1652244461~hmac=9eda4e72451c6174e59f1fbfabe10d90696e683f53e9a7b96f9efbd21b905e63" alt="" srcset="")
       
+
+  .container 
+    .container-about
+      .slider 
+        .slider-img-container
+            img.mySlide(src="https://img.freepik.com/foto-gratis/vista-lateral-chef-flameando-plato-cocina_23-2148763118.jpg?t=st=1652151881~exp=1652152481~hmac=82740a3100b0302007c83dca9ab3dabef79d1ccf58ce0b7e496f91fc501229d1&w=740")
+            img.mySlide(src="https://img.freepik.com/foto-gratis/chef-macho-cortando-tomates-cocina_23-2148763116.jpg?w=740&t=st=1652154508~exp=1652155108~hmac=359afdefa8419c6811ef4ee84b613b28a4043210252ffe53b15cb7e7b51507fa")
+            img.mySlide(src="https://img.freepik.com/foto-gratis/chef-cocina_23-2148006182.jpg?w=740&t=st=1652154506~exp=1652155106~hmac=566906431842fe8de637a05fc2fa64699742a589c5f9e0bf85619618e5b63415")
+            img.mySlide(src="https://img.freepik.com/foto-gratis/vista-frontal-chef-preparando-masa_23-2148763226.jpg?w=740&t=st=1652154570~exp=1652155170~hmac=f46708bf910f424b18273013f3ab3caf3422c67fec9e12ffa66bddc2a0333441")
+        
+            .buttons-container
+                button.slider-button(onclick="plusDivs(-1)") Prev
+                button.slider-button(onclick="plusDivs(1)") Next
+  
 block body-footer
   include includes/footer

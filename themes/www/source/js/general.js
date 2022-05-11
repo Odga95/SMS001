@@ -76,7 +76,6 @@ function showDivs(n) {
 function menuOpen() {
     const display = document.getElementById('menuList').style.display;
     if (!display || display === 'none') {
-        console.log(display)
         document.getElementById('menuList').style.display = 'flex'
     }
     else {
