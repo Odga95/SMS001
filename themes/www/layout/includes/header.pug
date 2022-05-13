@@ -14,15 +14,22 @@ header
             #menuList.d-flex-list
                 
                     li
-                        a.link-style(href="/post", onClick='return true') Home
+                        a.link-style(href="/post", onClick='return true') Post
                     li
-                        a.link-style(href="/index" TARGET="_self") Home
+                        a.link-style(href="/index", onClick='return true') Home
+                    li  
+                        .subMenu
+                            a.link-style(href="/services", onClick='return true') Services
+                            .fa-solid.fa-angle-down
+                        ul.display-none
+                            li
+                                a.link-style(href="/services", onClick='return true') Service
+                            li 
+                                a.link-style(href="/services", onClick='return true') Service
                     li
-                        a.link-style(href="/services" TARGET="_self") Services
+                        a.link-style(href="/blog", onClick='return true') Blog
                     li
-                        a.link-style(href="/blog" TARGET="_self") Blog
+                        a.link-style(href="/contact", onClick='return true') Contact
                     li
-                        a.link-style(href="/contact" TARGET="_self") Contact
-                    li
-                        a.link-style(href="/about" TARGET="_self") About
+                        a.link-style(href="/about", onClick='return true') About
     hr.divide    

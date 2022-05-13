@@ -101,8 +101,8 @@ header
 
   li
     width 100%
-    height: 40px
     display: flex
+    flex-direction: column
     text-align center
     align-items center
     justify-content: center
@@ -110,7 +110,6 @@ header
 
   .d-flex-list li:hover
     background rgb(218, 218, 218)   
-
 
   .link-style   
     font-size 18px
@@ -121,6 +120,8 @@ header
     font-weight 100
     font-family 'Roboto Mono', monospace
     z-index 2
+    position: relative
+    width: 100%
     @media movil
       margin 10px
       font-size 20px
@@ -155,3 +156,28 @@ header
 
   .openMenu
     display flex
+
+.display-none
+  display none
+  width: 100%
+  flex-direction: flex
+  flex-direction: column
+  text-align: left
+
+.display-none:hover
+  display flex
+
+
+.fa-angle-down
+  display: flex
+  align-items: center
+  justify-content: center
+  font-size: 22px
+  cursor pointer
+  text-decoration underline
+  color gray
+  @media tablet
+    display none
+
+.subMenu
+  display: flex
