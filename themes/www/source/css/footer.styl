@@ -1,3 +1,4 @@
+
 movil = 'screen and (max-width 576px)'
 tablet = 'screen and (max-width 768px)'
 
@@ -21,7 +22,6 @@ footer
         @media movil
             width: 90%
             
-
     .footer-logo
         width: 50%
         display flex
@@ -84,8 +84,24 @@ footer
         display flex
 
     .legal
+        margin-top 40px
         width: 100%
-        height: 
+        height: auto
+        font-size: 20px
+        font-family: fontfam6
+        display: flex
+        align-items: center
+        color: white
+        font-weight: 900
+        justify-content: center
+        @media tablet
+            flex-direction: column
+
+        a
+            margin auto
+            text-decoration: none
+    
+
 
 
   
