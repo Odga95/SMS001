@@ -1,5 +1,6 @@
 movil = 'screen and (max-width 576px)'
 tablet = 'screen and (max-width 768px)'
+escritorio-s = 'screen and (max-width 992px)'
 
 header
   height 100vh
@@ -11,7 +12,6 @@ header
   display flex
   justify-content center
   text-align center
-  
 
   .banner
     display flex
@@ -40,20 +40,8 @@ header
     margin-top auto
     margin-bottom  auto
 
-.divide
-  height 4vh
-  display none
-  background white
-  position absolute
-  width 100%
-  margin 0
-  border 1px solid white
-  bottom 0
-  @media movil
-    display block
-  @media tablet
-    display block
-.home
+
+.nav
   width 100%
   height 80px
   background white
@@ -70,12 +58,13 @@ header
     justify-content: flex-end
 
   .contenido-list
-    width 50%
+    width 100%
     height 100%
     display flex
     align-items center
     justify-content center
     text-align center
+    position: relative
     @media movil
       z-index 5
       justify-content: flex-end
@@ -86,6 +75,7 @@ header
   .d-flex-list
     display flex
     list-style none
+    position relative
     @media tablet
       display none
       font-size 60px
@@ -126,6 +116,8 @@ header
       margin 10px
       font-size 20px
       width: 100%
+    @media escritorio-s
+      margin 8px
       
     
 
@@ -172,12 +164,45 @@ header
   display: flex
   align-items: center
   justify-content: center
-  font-size: 22px
+  font-size: 20px
   cursor pointer
-  text-decoration underline
-  color gray
-  @media tablet
-    display none
+  color #fac000
+.fa-angle-down:hover
+  font-size: 24px
+  color #d3a203
 
 .subMenu
   display: flex
+  margin 0px 20px
+  @media tablet
+    margin 0px 0px
+
+.divide
+  height 4vh
+  display none
+  background white
+  position absolute
+  width 100%
+  margin 0
+  border 1px solid white
+  bottom 0
+  @media movil
+    display block
+  @media tablet
+    display block
+.absolute-logo
+    position: absolute
+    left: 2%
+    height: 80px
+    @media escritorio-s
+      margin-top 5px
+      height: 70px
+      left: 1.5%
+    @media tablet
+      
+      left: 5%
+
+    img
+      height 100%
+  
+

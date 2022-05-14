@@ -6,30 +6,30 @@ header
             h4.fontfam3 Welcome To
             h1.fontfam4 BANAKY
             h2.fontfam4 Lorem ipsum dolor sit amet consectetur adipisicing
-    .home
+    .nav
+        .absolute-logo
+                        img(src="../img/Logo3.png", alt="")
         .contenido-list
         
             #menuIcon.fa-solid.fa-bars.fa-2x
-
-            #menuList.d-flex-list
-                
-                    li
-                        a.link-style(href="/post", onClick='return true') Post
-                    li
-                        a.link-style(href="/index", onClick='return true') Home
-                    li  
-                        .subMenu
-                            a.link-style(href="/services", onClick='return true') Services
-                            .fa-solid.fa-angle-down
-                        ul.display-none
-                            li
-                                a.link-style(href="/services", onClick='return true') Service
-                            li 
-                                a.link-style(href="/services", onClick='return true') Service
-                    li
-                        a.link-style(href="/blog", onClick='return true') Blog
-                    li
-                        a.link-style(href="/contact", onClick='return true') Contact
-                    li
-                        a.link-style(href="/about", onClick='return true') About
+            ul#menuList.d-flex-list
+                li  
+                    .subMenu
+                        a.link-style(href="/services", onClick='return true') Services
+                        .fa-solid.fa-angle-down
+                    ul.display-none
+                        li
+                            a.link-style(href="/services", onClick='return true') Service
+                        li 
+                            a.link-style(href="/services", onClick='return true') Service
+                li
+                    a.link-style(href="/post", onClick='return true') Post
+                li
+                    a.link-style(href="/index", onClick='return true') Home
+                li
+                    a.link-style(href="/blog", onClick='return true') Blog
+                li
+                    a.link-style(href="/contact", onClick='return true') Contact
+                li
+                    a.link-style(href="/about", onClick='return true') About
     hr.divide    

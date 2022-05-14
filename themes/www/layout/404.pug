@@ -5,31 +5,42 @@ block body-header
 block head-title
 
 block body-main
-  .home 
-    .contenido-list
-      #menuIcon.fa-solid.fa-bars.fa-2x
-      #menuList.d-flex-list
-          li
-              a.link-style(href="index") Home
-          li
-              a.link-style(href="post") Post
-          li
-              a.link-style(href="contact") Contact
-          li
-              a.link-style(href="services") Services
-          li
-              a.link-style(href="about") About
+    .nav
+        .absolute-logo
+                        img(src="../img/Logo3.png", alt="")
+        .contenido-list
+        
+            #menuIcon.fa-solid.fa-bars.fa-2x
+            ul#menuList.d-flex-list
+                li  
+                    .subMenu
+                        a.link-style(href="/services", onClick='return true') Services
+                        .fa-solid.fa-angle-down
+                    ul.display-none
+                        li
+                            a.link-style(href="/services", onClick='return true') Service
+                        li 
+                            a.link-style(href="/services", onClick='return true') Service
+                li
+                    a.link-style(href="/post", onClick='return true') Post
+                li
+                    a.link-style(href="/index", onClick='return true') Home
+                li
+                    a.link-style(href="/blog", onClick='return true') Blog
+                li
+                    a.link-style(href="/contact", onClick='return true') Contact
+                li
+                    a.link-style(href="/about", onClick='return true') About
   
-  .container-404.color-black
-    .mensaje-404.text-404
-        .number-404.fontfam6.font-l
-            h2 4
-            h3 0
-            h2 4
-    h1.fontfam6 ¡Ohh no!
-    h3.fontfam5 ...Site Not Found   
-    p.fontfam5  The page you are looking is not availible
+    .container-404.color-black
+        .mensaje-404.text-404
+            .number-404.fontfam6.font-l
+                h2 4
+                h3 0
+                h2 4
+        h1.fontfam6 ¡Ohh no!
+        h3.fontfam5 ...Site Not Found   
+        p.fontfam5  The page you are looking is not availible
       
 
 block body-footer
-  include includes/footer
