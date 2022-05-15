@@ -37,7 +37,7 @@ escritorio-l = 'screen and (min-width 1400px)'
   -moz-box-sizing border-box!important
   box-sizing border-box!important
 
-body  
+body
   position: relative
 
 vendor(prop, args)
@@ -49,7 +49,7 @@ border-radius()
   vendor('border-radius', arguments)
 
 transform()
-  vendor('transform', arguments)  
+  vendor('transform', arguments)
 
 transition()
   vendor('transition', arguments)
@@ -163,7 +163,7 @@ body
       display flex
       justify-content center
       text-align center
-      margin-top 20px
+      margin 20px 0px
       position relative
 
       .behind
@@ -175,10 +175,10 @@ body
         margin-top 2px
         top 0
         left 0
-      
+
       .gradiente
         display flex
-        flex-direction column 
+        flex-direction column
         z-index 1
         width 100%
         height 100%
@@ -189,10 +189,10 @@ body
 
       .banner-home
         display flex
-        flex-direction column 
+        flex-direction column
         width 100%
         height 40vh
-        background rgba(58, 58, 58, 0.445)
+        background rgba(71, 71, 71, 0.445)
         margin-top auto
         margin-bottom  auto
         justify-content center
@@ -201,10 +201,10 @@ body
           font-size 18px
           color white
           @media movil
-            font-size 25px 
+            font-size 25px
             @media tablet
               font-size 28px
-            
+
 
     .card-content p
       margin-top auto
@@ -230,16 +230,16 @@ body
         display flex
         flex-direction column
         align-items center
-        width 100% 
+        width 100%
         margin-top 50px
         height fit-content
         @media movil
-          width 85% 
+          width 85%
         @media tablet
-          width 75% 
+          width 75%
 
         .card-img
-          width 80% 
+          width 80%
           height 300px
           margin-bottom 20px
           @media movil
@@ -261,7 +261,7 @@ body
             display flex
             align-items  end
 
-          .text-card 
+          .text-card
             font-size 18px
             display -webkit-box
             width 100%
@@ -271,10 +271,10 @@ body
             -webkit-box-orient vertical
             overflow hidden
             text-overflow ellipsis
-          
-        .but-content 
+
+        .but-content
           width 100%
-          text-align left  
+          text-align left
 
         .continue
           width fit-content
@@ -289,7 +289,7 @@ body
           font-weight 600
           text-transform uppercase
           text-decoration: none
-          
+
       hr
         width 50%
         height 0px
@@ -310,7 +310,176 @@ body
         img
           width 100%
 
+.services-container-home
+  padding 60px 10px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  text-align: center
+  @media tablet
+    padding 70px 70px
+  @media movil
+    padding 70px 70px
+
+  
+  h2
+    text-transform: uppercase
+    margin auto
+    margin-bottom: 40px
+
+  .box-services
+    
+    border 2px solid gray
+    border-radius 10px
+    display: flex
+    flex-wrap: wrap
+    text-align: center
+    justify-content: center
+    .card-service
+      border-radius 10px
+      max-width: 270px
+      height: 400px
+      margin 15px
+      border-radius 2%
+      a
+        border-radius 5%
+        display block
+        width: 100%
+        height: 100%
+        position: relative
+        border-radius 2%
+
+      img
+        position relative
+        width: 100%
+        height: 100%
+        object-fit: cover
+        border-radius 2%
+
+    .card-service-content
+
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      padding: 5px;
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
+      position absolute
+      font-family: fontfam3
+      border-radius 2%
+      color #fac000
+      background: rgba(0, 0, 0, 0.712)      
+      transition:  0.5s;
+
+      h2
+        display: flex;
+        justify-content: center
+        line-height: 1.2;
+        height: 110px;
+        width: 100%
+        padding: 10px;
+        font-family: fontfam5
+        font-size: 20px
+        text-transform: capitalize
+        
+
+    .card-service-content:hover
+      background: #fac000c2
+      color white
+
+
+.testimonials-home
+  display: flex
+  flex-direction: column-reverse
+  justify-content: center
+  align-items: center
+  text-align: center
+  background: gray
+  width: 100%
+  height: auto
+  @media tablet
+    flex-direction: row  
+    height: 120vh
+
+  .testimonials-text
+    margin auto
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center
+    width: 50%
+    @media tablet
+      width: 50%
+      color white
+    p 
+      width: 70%
+
+  .testimonials-title 
+    margin-top 30px
+    margin-bottom: 40px
+    @media tablet 
+      margin-top 0px
+
+  .fa-quote-right
+    margin 50px
+
+  .testimonials-photo
+    width: 150px
+    height: 150px
+    margin auto
+    img
+      margin-top 50px
+      width: 100%
+      height: 100%
+      object-fit: cover
+      border-radius: 100%
+  .testimonials-name
+    margin-top 70px
+  
+  .testimonials-img
+    height: 100%;
+    width: 100%
+    @media tablet
+      width: 50%;
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover;  
+
+  .testimonials-position
+    margin-bottom: 60px
+    @media tablet
+      margin-bottom: 0px
+
+
+
+
+
+
+
 //basics
+
+.banner-index
+  width  100%
+  display  flex
+  flex-direction  column
+  justify-content  center
+  align-items  center
+  text-align  left
+  padding  80px 70px
+  color black
+  @media movil
+    font-size 22px
+  @media tablet
+    font-size 25px
+  h2
+    margin-bottom: 20px
+    color #fac000
 
 .banner-text
   width  100%
@@ -332,16 +501,16 @@ body
   h3
     margin 20px
   p
-    margin-bottom 20px
+    text-align: center
 ul
     list-style  none
-  li 
-    p 
+  li
+    p
       @media movil
         margin-left 30px
         margin-right 30px
 
-  li 
+  li
     & p:before
       content   '•'
       font-size 30px
@@ -366,15 +535,17 @@ ul
     margin auto
     @media movil
       width  45%
-    h3
+    h2
       margin 20px
     p
-      margin-bottom 20px
+      font-size: font-s
+
+
   .text-img
     width  90%
     margin auto
     @media movil
-      width  45% 
+      width  45%
 
     img
       width  100%
@@ -406,8 +577,8 @@ ul
     @media tablet
       display flex
   li
-    width  300px
-    height  300px
+    max-width  300px
+    max-height  300px
     margin 20px
     @media movil
       width  250px
@@ -419,6 +590,7 @@ ul
     width  98%
     height  98%
     object-fit  cover
+    border-radius: 10px
 
 .mt-1
   margin 10px
@@ -441,11 +613,22 @@ ul
   text-align  center
   justify-content  center
   align-items  center
-  background  #fac000
   .banner-title
-    text-align  center
     font-weight 900
     font-family  fontfam3
+    display: flex
+    flex-direction: column
+    text-align  center
+    h3
+      text-transform: uppercase
+      margin 20px
+    p
+      padding 20px
+      margin auto
+      width: 90%
+      font-weight: 100
+      @media tablet
+        width: 70%
   .banner-text
     text-align  center
     margin  20px 0px
@@ -473,21 +656,21 @@ ul
     flex-direction: row
     justify-content: center
     align-items: start
-  
-  
 
-section 
+
+
+section
   width 80%
   margin-right 1%
   @media movil
     width 49%
 
-aside 
+aside
   width 80%
   margin-left 1%
   @media movil
     width 49%
-  .form 
+  .form
     display flex
     flex-direction column
 
@@ -500,14 +683,14 @@ aside
       border-radius 4px
       font-family fontfam3
       outline none
-  
+
     inputfocus, textareafocus
       background rgba(218, 218, 218, 0.158)
-    
+
     textarea
       max-width 100%
       height 300px
-      
+
 
     #bpriva
       width 100%
@@ -522,7 +705,7 @@ aside
       letter-spacing 3px
       text-transform uppercase
 
-    #bpriva:hover 
+    #bpriva:hover
       background-color #e6b000
 
 // 404
@@ -539,10 +722,10 @@ aside
 
   .mensaje-404
     text-align  center
-    .text-404 
+    .text-404
       font-weight  900
-  
-    
+
+
     .number-404
       display  flex
       justify-content  center
@@ -550,20 +733,20 @@ aside
 
   h2
       margin 4px
-  h3 
+  h3
     margin-top 7px
-  p 
+  p
     text-align  center
     font-weight  500
-    
+
 
 // about
 
 .container-about
   display  block
   width 100%
-  text-align  center  
-  
+  text-align  center
+
   img
     width  90%
 
@@ -597,7 +780,7 @@ aside
       height 100%
       object-fit  cover
 
-  .mySlide 
+  .mySlide
     display none
     width  100%
 
@@ -649,11 +832,11 @@ aside
   width  80%
   @media movil
     width  70%
-  @media tablet    
+  @media tablet
     width  60%
-  @media escritorio-s  
+  @media escritorio-s
     width  45%
-  img 
+  img
     margin-top  -100px
     width  100%
     border-radius 20px
@@ -665,7 +848,7 @@ aside
   align-items  center
   margin-bottom  20px
 
-.title-text 
+.title-text
   width  90%
   padding 10px
   color black
@@ -675,7 +858,7 @@ aside
   h2
     margin-top 10px
     font-size 16px
-    margin-bottom  10px  
+    margin-bottom  10px
     text-align  center
     @media tablet
       font-size 25px
@@ -684,7 +867,7 @@ aside
     @media tablet
       font-size 20px
 
-.services-list  
+.services-list
   width  100%
   padding 10px
   color black
@@ -763,7 +946,7 @@ aside
     align-items  center
     padding-top  0px
     padding  70px 50px
-    width  50% 
+    width  50%
   img
     border-radius 10px
     width  80%
@@ -785,9 +968,9 @@ aside
   text-align  left
   @media tablet
     padding  70px 50px
-    width  50% 
+    width  50%
 
-.text-title 
+.text-title
   width  90%
   margin auto
   color white
@@ -797,11 +980,11 @@ aside
     font-weight  900
     display  none
     cursor pointer
-    @media tablet 
+    @media tablet
       display block
       font-size 25px
   p
-    font-size 16px  
+    font-size 16px
     font-weight  100
     margin-bottom  10px
     cursor pointer
@@ -823,14 +1006,17 @@ aside
     font-size 22px
   @media tablet
     font-size 25px
+
+  h1
+    margin-bottom: 20px
   .title-service
     margin 20px
   p
     margin-bottom 20px
 ul
     list-style  none
-  li 
-    p 
+  li
+    p
       @media movil
         margin-left 30px
         margin-right 30px
@@ -848,10 +1034,10 @@ ul
     width: 45%
   @media escritorio-l
     width: 35%
-  a 
+  a
     text-decoration: none
-  
-  
+
+
   .contacto
     width 100%
     background-color #0025faa9
@@ -867,12 +1053,12 @@ ul
     @media movil
       letter-spacing 3px
       font-size: 22px
-    
-  .contacto:hover 
+
+  .contacto:hover
     background-color #2101d3
 
 
-.parpadea 
+.parpadea
   animation-name parpadeo
   animation-duration  2s
   animation-timing-function linear
@@ -947,7 +1133,7 @@ ul
   color black
   ul
     padding: 0px 20px
-    .post-list 
+    .post-list
       list-style: disc
       & p:before
         content: none
@@ -958,7 +1144,7 @@ ul
   margin-bottom: 20px
 
   .list-wrap
-    display: flex;  
+    display: flex;
     justify-content: center
     flex-wrap: wrap;
 
@@ -994,7 +1180,6 @@ ul
 
   .contenedor-header
     width 100%
-    height 100%
     display flex
     justify-content center
     text-align center
@@ -1010,32 +1195,46 @@ ul
       height 100%
       object-fit cover
       position: absolute
-      
       top 0
       left: 0
-      z-index -1
-      
+
+  .blur
+     filter: blur(4px);
+
+
 .banner
   display flex
-  flex-direction column 
-  height 80vh
+  flex-direction column
+  height 105vh
   position: absolute
   width 100%
-  padding-top 90px
+  padding-top 120px
   padding-right  70px
   padding-left 70px
   padding-bottom  70px
   margin-top -40px
-  @media movil
+
+  @media tablet
+    height 90vh
     margin-top 45px
     padding: 0
-  @media tablet
-    margin-top 45px
-    padding: 0  
-  
+
+  @media escritorio-s
+    height 80vh
+
+  h1
+    font-size 20px
+    @media tablet
+      font-size 50px
+
+  h2
+    font-size 25px
+    @media tablet
+      font-size 50px
+
 
 h1,h2,h4
   margin-top auto
   margin-bottom  auto
 
-  
+
