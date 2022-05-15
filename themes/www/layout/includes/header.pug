@@ -6,11 +6,16 @@ header
         
             #menuIcon.fa-solid.fa-bars.fa-2x
             ul#menuList.d-flex-list
-                li  
+                #subMenu.list-submenu
                     .subMenu
                         a.link-style(href="/services", onClick='return true') Services
-                        .fa-solid.fa-angle-down
-                    ul.display-none
+                        #subMenu.fa-solid.fa-angle-down
+                
+                    ul#subMenuList.display-none.absolute
+                        li
+                            a.link-style(href="/services", onClick='return true') Service
+                        li
+                            a.link-style(href="/services", onClick='return true') Service
                         li
                             a.link-style(href="/services", onClick='return true') Service
                         li 

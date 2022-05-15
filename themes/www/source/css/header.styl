@@ -1,6 +1,7 @@
 movil = 'screen and (max-width 576px)'
 tablet = 'screen and (max-width 768px)'
 escritorio-s = 'screen and (max-width 992px)'
+escritorio-ss = 'screen and (min-width 992px)'
 
 header
   height 100vh
@@ -63,6 +64,15 @@ header
     text-align center
     align-items center
     justify-content: center
+  
+  .list-submenu
+    width 100%
+    display: flex
+    flex-direction: column
+    text-align center
+    align-items center
+    justify-content: center
+    position relative
 
 
   .d-flex-list li:hover
@@ -110,7 +120,21 @@ header
   flex-direction: flex
   flex-direction: column
   text-align: left
-
+.absolute
+  background: #fac000
+  li
+    transition: 1s
+    a
+      color white !important
+      font-weight: 900 !important
+  @media escritorio-s
+    position: absolute
+    top 0
+    margin-top 58px
+  @media escritorio-ss
+    position: absolute
+    top 0
+    margin-top 72px
 .display-none:hover
   display flex
 
@@ -129,8 +153,12 @@ header
 .subMenu
   display: flex
   margin 0px 20px
+.subMenu-hover
+  background: #fac00075
   @media tablet
     margin 0px 0px
+  a
+    display: block
 
 .divide
   height 4vh

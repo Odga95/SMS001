@@ -1,7 +1,14 @@
 const menuIcon = document.getElementById('menuIcon');
+const subMenuIcon = document.getElementById('subMenu');
 
 document.addEventListener("DOMContentLoaded", () => {
+    
+    
+    subMenuIcon.addEventListener('click', subMenuOpen);
     menuIcon.addEventListener('click', menuOpen);
+
+
+
     document.getElementById('bnk_open').onclick = function () {
         var bnkNavLink = [...document.getElementsByClassName('bnk-nav-link')]
         if (bnkNavLink) {
@@ -75,11 +82,27 @@ function showDivs(n) {
 
 function menuOpen() {
     const display = document.getElementById('menuList').style.display;
-    if (!display || display === 'none') {
+    if (!display) {
         document.getElementById('menuList').style.display = 'flex'
     }
     else {
         console.log(display)
-        document.getElementById('menuList').style.display = 'none';
+        document.getElementById('menuList').style.display = '';
+    }
+}
+
+
+function subMenuOpen() {
+
+    console.log('click')
+    const display = document.getElementById('subMenuList').style.display;
+   
+    if (!display) {
+        document.getElementById('subMenuList').style.display = 'flex'
+        
+    }
+    else {
+        console.log(display)
+        document.getElementById('subMenuList').style.display = '';
     }
 }
