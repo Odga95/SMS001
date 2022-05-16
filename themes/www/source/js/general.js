@@ -57,6 +57,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+//SLIDER BASIC IMG
+
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -78,6 +80,34 @@ function showDivs(n) {
     }
     x[slideIndex - 1].style.display = "block";
 }
+
+
+//SLIDER TESTIMONIALS
+
+var slideIndexTestimonial = 1;
+showDivsT(slideIndexTestimonial);
+
+function plusDivsTestimonials(m) {
+    showDivsT(slideIndexTestimonial += m);
+}
+
+function currentDivTestimonials(m) {
+    showDivsT(slideIndexTestimonial = m);
+}
+
+function showDivsT(m) {
+    var j;
+    var y = document.getElementsByClassName("testimonials-home");
+    if (m > y.length) { slideIndexTestimonial = 1 }
+    if (m < 1) { slideIndexTestimonial = y.length }
+    for (j = 0; j < y.length; j++) {
+        
+        y[j].style.cssText += "opacity: 0;display: flex"
+
+    }
+    y[slideIndexTestimonial - 1].style.cssText += "opacity:1; display:flex"
+}
+
 
 
 function menuOpen() {

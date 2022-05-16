@@ -392,8 +392,26 @@ body
       color white
 
 
+ .testimonials-slider-home
+    width  100%
+    height: 120vh
+    display  flex
+    flex-direction  column
+    text-align  center
+    justify-content  center
+    align-items  center
+    position relative
+    
+.testFlex
+  opacity 1
+
 .testimonials-home
-  display: flex
+  opacity: 1
+  position: absolute
+  top 0 
+  left 0
+  display none
+  transition: 1s
   flex-direction: column-reverse
   justify-content: center
   align-items: center
@@ -406,6 +424,7 @@ body
     height: 120vh
 
   .testimonials-text
+    
     margin auto
     display: flex
     flex-direction: column
@@ -784,11 +803,21 @@ aside
     display none
     width  100%
 
+
 .slider-img-container
   width  90%
 
 .buttons-container
   margin 15px
+
+.buttons-testimonials
+  width: 100%
+  position: absolute;
+  top: 100%;
+  transform: translate(0, -50%);
+
+
+
 
   .slider-button
     background-color #fac000
