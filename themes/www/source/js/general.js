@@ -83,7 +83,7 @@ function showDivs(n) {
 function menuOpen() {
     const display = document.getElementById('menuList').style.display;
     if (!display) {
-        document.getElementById('menuList').style.display = 'flex'
+        document.getElementById('menuList').style.display = 'flex' 
     }
     else {
         console.log(display)
