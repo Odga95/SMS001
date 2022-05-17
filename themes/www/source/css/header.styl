@@ -1,5 +1,7 @@
 movil = 'screen and (max-width 576px)'
+movill = 'screen and (min-width 576px)'
 tablet = 'screen and (max-width 768px)'
+tablett = 'screen and (min-width 768px)'
 escritorio-s = 'screen and (max-width 992px)'
 escritorio-ss = 'screen and (min-width 992px)'
 
@@ -48,7 +50,7 @@ header
       display none
       font-size 60px
       width 100%
-      background rgba(255, 255, 255, 0.952)
+      background rgb(255, 255, 255)
       position absolute
       top 78  px
       z-index 5
@@ -81,7 +83,6 @@ header
   .link-style   
     font-size 18px
     margin 20px
-    text-transform uppercase
     text-decoration none
     color rgb(131, 131, 131)
     font-weight 100
@@ -120,21 +121,33 @@ header
   flex-direction: flex
   flex-direction: column
   text-align: left
+  
 .absolute
-  background: #fac000
+  background: #ffcc26
   li
     transition: 1s
     a
       color white !important
       font-weight: 900 !important
-  @media escritorio-s
+  @media movill
     position: absolute
     top 0
     margin-top 58px
+  @media tablet 
+    position: relative
+    top 0
+    margin-top 0
+
+  // @media escritorio-s
+  //   position: absolute
+  //   top 0
+  //   margin-top 58px
   @media escritorio-ss
     position: absolute
     top 0
     margin-top 72px
+
+
 .display-none:hover
   display flex
 
@@ -147,7 +160,6 @@ header
   cursor pointer
   color #fac000
 .fa-angle-down:hover
-  font-size: 24px
   color #d3a203
 
 .subMenu
