@@ -1,5 +1,5 @@
 const menuIcon = document.getElementById('menuIcon');
-const subMenuIcon = document.getElementById('subMenu');
+const subMenuIcon = document.querySelector('.fa-angle-down');
 
 document.addEventListener("DOMContentLoaded", () => {
     
@@ -123,8 +123,6 @@ function menuOpen() {
 
 
 function subMenuOpen() {
-
-    console.log('click')
     const display = document.getElementById('subMenuList').style.display;
    
     if (!display) {

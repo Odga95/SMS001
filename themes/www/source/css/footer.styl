@@ -1,6 +1,9 @@
 
 movil = 'screen and (max-width 576px)'
 tablet = 'screen and (max-width 768px)'
+escritorio-s = 'screen and (max-width 992px)'
+escritorio-m = 'screen and (max-width 1200px)'
+escritorio-l = 'screen and (max-width 1400px)'
 
 footer
     width 100%
@@ -16,72 +19,81 @@ footer
     padding-top: 20px
 
     .footer-container
-        width 70%
+        width 100%
         height 100%
         display: flex
+        @media escritorio-s
+            flex-direction: column
         @media movil
             width: 90%
-            
-    .footer-logo
-        width: 50%
+    .footer-logo-contactUs   
+        width: 46%
+        height: 100%     
         display flex
-        flex-direction: column
-        justify-content: center
-        align-items: center
-        margin auto
-        text-align: center
+        @media escritorio-s
+            width: 100%
+            margin-bottom: 20px
+        .footer-logo
+            width:50%
+            display flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            margin auto
+            text-align: left
 
-        img
-            width: 150px
-            height auto 
-            margin-top auto
-            margin-bottom: 15px
+            img
+                width: 150px
+                height auto 
+                margin-top auto
+                margin-bottom: 15px
+                @media tablet
+                    width: 120px
+                    @media movil
+                        width: 100px
+
+        .social-networks
+            align-items: center
+        .contactUs,.social-networks
+            font-size: 25px
+            height 100%
+            width:50%
+            font-weight: 700
+            display flex
+            flex-direction: column
+            justify-content: center
             @media tablet
-                width: 120px
+                font-size: 20px
                 @media movil
-                    width: 100px
-
-        label
-            font-size: 15px
-            margin-left 15px
-            margin-right 15px
-            margin-top: 15px
-            margin-bottom: auto
-            @media movil
-                font-size: 13px
-
-    .contactUs,.social-networks
-        font-size: 25px
-        height 100%
-        width: 33%
-        font-weight: 700
-        display flex
-        flex-direction: column
-        justify-content: center
-        align-items: center
-        @media tablet
-            font-size: 20px
-            @media movil
-                font-size: 18px
+                    font-size: 18px
 
         
-    ul
-        margin-left 15px
-        margin-right 15px
-        margin auto
+            ul
+                margin-left 15px
+                margin-right 15px
+                margin auto
+                text-align: left
 
-    .footer-list
-        list-style none
-        height: 100%
-        margin auto
+            .footer-list
+                list-style none
+                height: 100%
+                margin auto
+                li
+                    margin-bottom: 20px 
+                    a   
+                        text-decoration: none
+                        color white
 
 
-    .footer-style
-        font-weight: 0
-        margin 2px
+            .footer-style
+                font-weight: 0
+                margin 2px
 
-    .center
-        display flex
+            .center
+                display flex
+                
+                @media escritorio-s
+                    margin auto
 
     .legal
         margin-top 40px
@@ -100,7 +112,60 @@ footer
         a
             margin auto
             text-decoration: none
-    
+
+    .footer-recent
+        width: 56%
+        height: auto
+        display: flex
+        flex-direction: column
+        align-items: center
+        @media escritorio-s
+            width: 100%
+
+.box-recent
+    width: 90%
+    height: 100%
+    padding 20px
+    @media escritorio-s
+        width: 100%
+    h2
+        margin-bottom: 5px
+    .recent
+        width: 100%
+        height 100px
+        display flex
+        align-items: start
+        justify-content: left
+        align-items: flex-start
+        margin-bottom: 10px
+        @media escritorio-s
+            height:250px
+        img
+            min-width: 35%
+            height: 100%
+            object-fit: cover
+            @media escritorio-s
+                width: 35%
+
+        a   
+            margin-left 20px
+            font-weight: 600
+            font-size 30px
+            max-width 65%
+            height 100%
+            line-height 1
+            display -webkit-box
+            -webkit-line-clamp 5
+            -webkit-box-orient vertical
+            overflow hidden
+            text-overflow ellipsis
+            text-align: left
+            @media escritorio-m
+             font-size 25px
+            @media escritorio-s
+             font-size 35px
+
+
 
 
 
