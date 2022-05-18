@@ -101,9 +101,7 @@ function showDivsT(m) {
     if (m > y.length) { slideIndexTestimonial = 1 }
     if (m < 1) { slideIndexTestimonial = y.length }
     for (j = 0; j < y.length; j++) {
-        
         y[j].style.cssText += "opacity:0; display: flex; position:absolute"
-
     }
     y[slideIndexTestimonial - 1].style.cssText += "opacity:1; display:flex;position:relative"
 }
