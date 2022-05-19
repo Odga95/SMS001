@@ -225,15 +225,26 @@ body
         @media tablet
           font-size 25px
 
+    .container-menu-post
+      width 100%
+      height fit-content
+      display flex
+      flex-direction column
+      justify-content center
+      align-items center
+      @media tablet
+        width 100%
 
     .container-menu
       width 100%
       height fit-content
       display flex
       flex-direction column
-      column-count 3
       justify-content center
       align-items center
+      @media tablet
+        width 70%
+
 
       .card
         display flex
@@ -248,13 +259,15 @@ body
           width 75%
 
         .card-img
-          width 80%
+          width 90%
           height 300px
           margin-bottom 20px
           @media movil
             height 350px
           @media tablet
             height 400px
+            width 100%
+
         img
           border-radius 15px
           width 100%
@@ -262,7 +275,7 @@ body
           object-fit cover
 
         .card-info
-          width 60%
+          width 80%
           .card-title
             text-transform capitalize
             margin-bottom 10px
@@ -1131,11 +1144,21 @@ ul
 }
 
 // Post
+.container-post-box
+  width:100%
+  display: flex
+  justify-content: center
+  flex-direction: column
+  @media tablet
+    flex-direction: row
 
 .container-post
   width: 100%
   padding-top 100px
   text-align: center
+  @media tablet
+    width: 70%
+
 .img-post
   margin-bottom: 50px
   width: 100%
@@ -1287,3 +1310,73 @@ h1,h2,h4
     text-align  left
     p
       margin-bottom: 10px
+
+
+// blog
+
+.container-blog
+  width:100%
+  display: flex
+  justify-content: center
+  flex-direction: column
+  @media tablet
+    flex-direction: row
+
+.container-categories-tags 
+  margin-top: 100px;
+  width:100%
+  height: auto
+  display: flex
+  flex-direction: column
+  justify-content: start
+  text-align: center
+  @media tablet
+    width: 30%
+
+  .container-box
+    width: 100%
+    padding-right: 30px
+    margin-top -1px
+    padding: 40px 20px
+    text-align: left
+    border-bottom: 1px solid color-first
+    border-top: 1px solid color-first
+
+
+    .title
+      width: fit-content
+      padding:  0px 7px
+      color color-white
+      font-weight: 900
+      font-family: fontfam5
+      border-radius 10px
+
+
+.lista-wrap
+  margin-top 20px
+  display: flex
+  flex-wrap: wrap
+  list-style: none
+  margin-left 20px
+  .margin-li
+    text-decoration: none;
+    margin 3px
+    background: rgb(161, 161, 161)
+    padding-left: 5px
+    padding-right: 5px
+    border-radius 5px
+    a
+      text-decoration: none;
+      width: fit-content
+      color white
+      font-family: fontfam5
+      font-weight: 800
+
+
+        
+
+
+
+
+    
+

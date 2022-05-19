@@ -121,6 +121,7 @@ footer
         align-items: center
         @media escritorio-s
             width: 100%
+            
 
 .box-recent
     width: 90%
@@ -140,12 +141,19 @@ footer
         margin-bottom: 10px
         @media escritorio-s
             height:250px
+        @media tablet
+            flex-direction: column
+            height 390px
         img
             min-width: 35%
             height: 100%
             object-fit: cover
             @media escritorio-s
                 width: 35%
+            @media tablet
+                width: 100%
+                min-height: 300px
+                max-height: 300px
 
         a   
             margin-left 20px
@@ -161,9 +169,13 @@ footer
             text-overflow ellipsis
             text-align: left
             @media escritorio-m
-             font-size 25px
+                font-size 25px
             @media escritorio-s
-             font-size 35px
+                font-size 35px
+            @media tablet
+                margin 0
+                font-size 25px
+                min-width 100%
 
 
 

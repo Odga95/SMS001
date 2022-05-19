@@ -6,6 +6,8 @@ header
         
             #menuIcon.fa-solid.fa-bars.fa-2x
             ul#menuList.d-flex-list
+                li
+                    a.link-style(href="/index", onClick='return true') Home
                 #subMenu.list-submenu
                     .subMenu
                         a.link-style(href="/services", onClick='return true') Services
@@ -23,11 +25,9 @@ header
                 li
                     a.link-style(href="/post", onClick='return true') Post
                 li
-                    a.link-style(href="/index", onClick='return true') Home
-                li
                     a.link-style(href="/blog", onClick='return true') Blog
                 li
-                    a.link-style(href="/contact", onClick='return true') Contact
-                li
                     a.link-style(href="/about", onClick='return true') About
+                li
+                    a.link-style(href="/contact", onClick='return true') Contact
     hr.divide    
