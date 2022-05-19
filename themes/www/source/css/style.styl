@@ -20,7 +20,9 @@ color-black = #000000
 color-gray = gray
 color-border = #bebebe
 color-letter = #6e6d6d
+color-input-focus = #dadada28
 color-first = #fac000
+color-first-hover = #e6b000
 color-second = #00c2cb
 color-third = #d58aeb
 
@@ -63,10 +65,14 @@ transition()
   color color-black
 .color-gray
   color color-gray
+.color-input-focus 
+  color color-input-focus
 .color-letter
   color color-letter
 .color-first
   color color-first
+.color-first-hover
+  color color-first-hover
 .color-second
   color color-second
 .color-third
@@ -191,7 +197,7 @@ body
         z-index 1
         width 100%
         height 100%
-        background rgb(255,255,255)
+        background color-white
         background -moz-linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(170,170,170,0) 16%, rgba(179,179,179,0) 48%, rgba(191,191,191,0) 84%, rgba(255,255,255,1) 100%)
         background -webkit-linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(170,170,170,0) 16%, rgba(179,179,179,0) 48%, rgba(191,191,191,0) 84%, rgba(255,255,255,1) 100%)
         background linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(170,170,170,0) 16%, rgba(179,179,179,0) 48%, rgba(191,191,191,0) 84%, rgba(255,255,255,1) 100%)
@@ -201,14 +207,14 @@ body
         flex-direction column
         width 100%
         height 40vh
-        background rgba(71, 71, 71, 0.445)
+        background color-letter
         margin-top auto
         margin-bottom  auto
         justify-content center
 
         p
           font-size 18px
-          color white
+          color color-white
           @media movil
             font-size 25px
             @media tablet
@@ -219,7 +225,7 @@ body
       margin-top auto
       margin-bottom  auto
       font-size 15px
-      color rgba(0, 0, 0, 0.959)
+      color color-black
       @media movil
         font-size 18px
         @media tablet
@@ -291,9 +297,9 @@ body
 
         .continue
           width fit-content
-          background-color #fac000
+          background-color color-first
           font-size 10px
-          color white
+          color color-white
           padding 10px 16px
           margin 12px 0
           border none
@@ -306,8 +312,8 @@ body
       hr
         width 50%
         height 0px
-        background #d8d8d7
-        color white
+        background colro-border
+        color color-white
         margin 10px 70px
         border 1px dashed;
 
@@ -381,8 +387,8 @@ body
       position absolute
       font-family: fontfam3
       border-radius 2%
-      color #fac000
-      background: rgba(0, 0, 0, 0.712)      
+      color color-first
+      background: #000000b6      
       transition:  0.5s;
 
       h2
@@ -398,8 +404,8 @@ body
         
 
     .card-service-content:hover
-      background: #fac000c2
-      color white
+      background: color-first
+      color color-white
 
 
  .testimonials-slider-home
@@ -426,7 +432,7 @@ body
   justify-content: center
   align-items: center
   text-align: center
-  background: gray
+  background: color-gray
   width: 100%
   height: auto
   @media tablet
@@ -443,7 +449,7 @@ body
     width: 100%
     @media tablet
       width: 50%
-      color white
+      color color-white
     p 
       width: 70%
 
@@ -485,11 +491,6 @@ body
       margin-bottom: 0px
 
 
-
-
-
-
-
 //basics
 
 .banner-index
@@ -500,14 +501,14 @@ body
   align-items  center
   text-align  left
   padding  80px 70px
-  color black
+  color color-black
   @media movil
     font-size 22px
   @media tablet
     font-size 25px
   h2
     margin-bottom: 20px
-    color #fac000
+    color color-first
 
 .banner-text
   width  100%
@@ -519,9 +520,9 @@ body
   text-align  left
   margin 70px 0px
   padding  50px
-  color white
+  color color-white
   font-size 18px
-  background  #fac000
+  background  color-first
   @media movil
     font-size 22px
   @media tablet
@@ -550,10 +551,10 @@ ul
   width  100%
   height  fit-content
   text-align  center
-  color black
+  color color-black
   padding  70px 0px
   font-size 18px
-  background  #ffffff
+  background  color-white
   @media movil
     font-size 22px
   @media tablet
@@ -592,9 +593,9 @@ ul
   text-align  center
   justify-content  center
   align-items  center
-  color white
+  color color-white
   font-size 18px
-  background  #fac000
+  background  color-first
   ul
     list-style  none
     display  flex
@@ -655,6 +656,7 @@ ul
       text-transform: uppercase
     h2
       margin-top 40px
+      margin-bottom: 20px
     p
       padding 20px
       margin auto
@@ -676,7 +678,7 @@ ul
 
 .contact
   margin 20px 20px
-  background white
+  background color-white
   text-align center
 
 .d-flex-contact
@@ -712,13 +714,13 @@ aside
       padding 12px 20px
       margin 8px 0
       display inline-block
-      border 1px solid #ccc
+      border 1px solid color-border
       border-radius 4px
       font-family fontfam3
       outline none
 
-    inputfocus, textareafocus
-      background rgba(218, 218, 218, 0.158)
+    input:focus, textarea:focus
+      background color-input-focus
 
     textarea
       max-width 100%
@@ -727,8 +729,8 @@ aside
 
     #bpriva
       width 100%
-      background-color #fac000
-      color white
+      background-color color-first
+      color color-white
       padding 14px 20px
       margin 8px 0
       border none
@@ -739,14 +741,14 @@ aside
       text-transform uppercase
 
     #bpriva:hover
-      background-color #e6b000
+      background-color color-first-hover
 
 // 404
 
 .container-404
   width 100%
   height 100vh
-  background #fac000
+  background color-first
   margin-bottom -70px
   display  flex
   flex-direction  column
@@ -792,7 +794,7 @@ aside
 
 // Sliders
 
-.slider
+.slider,.sliderS
   margin-top 25px
   width  100%
   display  flex
@@ -800,6 +802,7 @@ aside
   text-align  center
   justify-content  center
   align-items  center
+
 
   .slider-img-container
     width  90%
@@ -815,6 +818,9 @@ aside
       height 100%
       object-fit  cover
 
+  .mySlideS
+    display none
+    width  100%
   .mySlide
     display none
     width  100%
@@ -823,6 +829,9 @@ aside
     display none
     width  70%
     margin auto
+
+.sliderS
+  height: auto
 
 .slider-img-container
   width  90%
@@ -837,8 +846,8 @@ aside
   transform: translate(0, -50%);
 
 .slider-button
-  background-color #fac000
-  color white
+  background-color color-first
+  color color-white
   padding 8px 10px
   margin 8px 4px
   border none
@@ -858,9 +867,9 @@ aside
 .container-services
   width  100%
   height  fit-content
-  padding  90px 0px
+  padding-top  40px
   font-family fontfam3
-  color black
+  color color-black
 
 .serviceS
   margin-top 100px
@@ -870,7 +879,7 @@ aside
   flex-direction  column
   justify-content  center
   align-items  center
-  background  white
+  background  color-white
   padding-left  30px
   padding-right  30px
 
@@ -897,8 +906,8 @@ aside
 .title-text
   width  90%
   padding 10px
-  color black
-  background  rgb(255, 255, 255)
+  color color-black
+  background  color-white
   margin-top -20px
   text-align  left
   h2
@@ -916,7 +925,7 @@ aside
 .services-list
   width  100%
   padding 10px
-  color black
+  color color-black
   background  rgb(255, 255, 255)
   margin-top 20px
   text-align  left
@@ -925,14 +934,14 @@ aside
       width  100%
     .slist
       list-style   disc
-      color #fac000
+      color color-first
       margin-bottom  20px
       margin-left 20px
       a
         font-size  15px
         font-weight  800
         line-height   -10px;
-        color #fac000
+        color color-first
       p
 .wrapcontent
   width  90%
@@ -942,8 +951,8 @@ aside
 .text
   width  90%
   padding 10px
-  color black
-  background  rgb(255, 255, 255)
+  color color-black
+  background  color-white
   border-radius 20px
   p
     font-size 14px
@@ -953,7 +962,7 @@ aside
 .service
   width  100%
   height  auto
-  background  white
+  background  color-white
   text-align  center
   @media tablet
     display  flex
@@ -967,7 +976,7 @@ aside
 .service2
   width  100%
   height  auto
-  background  white
+  background  color-white
   text-align  center
   display  flex
   flex-direction  column-reverse
@@ -1007,7 +1016,7 @@ aside
 
 
 .service-texto
-  background  #fac000
+  background  color-first
   width  100%
   margin auto
   padding  50px 0px
@@ -1019,7 +1028,7 @@ aside
 .text-title
   width  90%
   margin auto
-  color white
+  color color-white
   font-weight  700
   h2
     margin-bottom  20px
@@ -1047,7 +1056,7 @@ aside
   align-items  center
   text-align  left
   padding  50px 70px
-  color black
+  color color-black
   @media movil
     font-size 22px
   @media tablet
@@ -1070,8 +1079,10 @@ ul
 
 .banner-button
   width  80%
+  margin auto
   margin-top 70px
   text-align  center
+
   @media movil
     width: 100%
   @media tablet
@@ -1087,7 +1098,7 @@ ul
   .contacto
     width 100%
     background-color #0025faa9
-    color white
+    color color-white
     padding 14px 20px
     margin 8px 0
     border none
@@ -1125,12 +1136,12 @@ ul
 @-webkit-keyframes parpadeo {
   0% { opacity: 1.0; }
   50% { opacity: 0.2; }
-   100% { opacity: 1.0; }
+  100% { opacity: 1.0; }
 }
 
 @keyframes parpadeo {
   0% { opacity: 1.0; }
-   50% { opacity: 0.2; }
+  50% { opacity: 0.2; }
   100% { opacity: 1.0; }
 }
 
@@ -1168,25 +1179,25 @@ ul
   margin-bottom: 10px
   text-align: center
   h1
-    color #fac000
+    color color-first
 .text-post
   font-size: 18px
   text-align: left
   p
     margin-bottom: 20px
 .subtitle-post
-  color black
+  color color-black
   text-align: left
   h2
     margin-top 70px
   h3
     margin-top 70px
-    color #fac000
+    color color-first
 .list-text-post
   margin-bottom 40px
   font-size: 18px
   text-align: left
-  color black
+  color color-black
   ul
     padding: 0px 20px
     .post-list
@@ -1218,7 +1229,7 @@ ul
   margin-top 70px
   text-align: left
   .authorname
-    color #fac000
+    color color-first
     font-weight: 800
     text-transform: uppercase
     font-size: 13px
@@ -1352,14 +1363,14 @@ h1,h2,h4
   .margin-li
     text-decoration: none;
     margin 3px
-    background: rgb(161, 161, 161)
+    background: color-border
     padding-left: 5px
     padding-right: 5px
     border-radius 5px
     a
       text-decoration: none;
       width: fit-content
-      color white
+      color color-white
       font-family: fontfam5
       font-weight: 800
 

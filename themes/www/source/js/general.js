@@ -83,7 +83,11 @@ function showDivs(n) {
     for (i = 0; i < y.length; i++) {
         y[i].style.display = "none";
     }
-    y[slideIndex - 1].style.display = "block";
+    if(y.length !==0){
+        y[slideIndex - 1].style.display = "block";
+    }else{
+        console.log("nada")
+    }
 }
 
 
