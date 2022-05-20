@@ -1324,7 +1324,7 @@ h1,h2,h4
   @media tablet
     flex-direction: row
 
-.container-categories-tags 
+.container-categories-tags,.container-cat-tag
   margin-top: 100px;
   width:100%
   height: auto
@@ -1335,7 +1335,7 @@ h1,h2,h4
   @media tablet
     width: 30%
 
-  .container-box
+  .container-box,.container-box-cat-tag
     width: 100%
     padding-right: 30px
     margin-top -1px
@@ -1347,10 +1347,14 @@ h1,h2,h4
     .title
       width: fit-content
       padding:  0px 7px
-      color color-white
       font-weight: 900
       font-family: fontfam5
       border-radius 10px
+      color color-white
+      a
+        text-decoration: none 
+        color color-white
+        font-size font-l
 
 
 .lista-wrap
@@ -1373,11 +1377,52 @@ h1,h2,h4
       font-family: fontfam5
       font-weight: 800
 
+// Categories - Tags
 
-        
+.container-cat-tag
+  width: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  text-align: center
+  @media tablet
+    width: 80%
+    margin auto
 
+  .container-box-cat-tag
+    width: fit-content
+    margin auto
+    text-align: left
+    border-bottom: none
+    border-top: none
+    margin-bottom: 40px
 
+    .title
+      margin-bottom: 40px
 
-
-    
-
+    .list-cat-tag
+      ul
+        display: flex
+        flex-wrap: wrap
+        li
+          text-align: center
+          width: fit-content
+          margin 2% 
+          
+          a
+            background: color-gray
+            text-decoration: none
+            line-height: 2
+            font-family: fontfam5
+            color color-white
+            font-size: font-m
+            padding: 10px
+            border-radius 10px
+            @media movil
+              font-size: font-l
+            @media tablet
+              font-weight: 900
+          ::before
+                content: '✔'
+                margin-right: 10px
