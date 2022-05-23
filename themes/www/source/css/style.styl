@@ -207,7 +207,7 @@ body
         flex-direction column
         width 100%
         height 40vh
-        background color-letter
+        background rgba(148, 148, 148, 0.418)
         margin-top auto
         margin-bottom  auto
         justify-content center
@@ -219,18 +219,6 @@ body
             font-size 25px
             @media tablet
               font-size 28px
-
-
-    .card-content p
-      margin-top auto
-      margin-bottom  auto
-      font-size 15px
-      color color-black
-      @media movil
-        font-size 18px
-        @media tablet
-          font-size 25px
-
 
     .container-menu
       width 100%
@@ -501,7 +489,6 @@ body
   align-items  center
   text-align  left
   padding  80px 70px
-  color color-black
   @media movil
     font-size 22px
   @media tablet
@@ -551,10 +538,8 @@ ul
   width  100%
   height  fit-content
   text-align  center
-  color color-black
   padding  70px 0px
   font-size 18px
-  background  color-white
   @media movil
     font-size 22px
   @media tablet
@@ -653,7 +638,6 @@ ul
     text-align  center
     h3
       margin 20px
-      text-transform: uppercase
     h2
       margin-top 40px
       margin-bottom: 20px
@@ -671,6 +655,46 @@ ul
     height  fit-content
 
 
+.banner-quality
+  text-align: center
+  margin-left: auto
+  margin-right: auto
+  width: 80%
+  .qualitys
+    display: flex
+    flex-wrap: wrap
+    width: 100%
+    height: 100%
+    padding-top: 50px
+    padding-bottom: 20px
+    align-items: flex-start
+    .quality-box
+      margin-left auto
+      margin-right:  auto
+      height: auto
+      width 50%
+      margin-bottom: 40px
+      display: flex
+      @media tablet
+       width 33.33333%
+        
+      .quality-left
+        margin-left auto
+        margin-right:  auto
+        margin-top 10px
+      .quality-right
+        text-align: left
+        width 70%
+        .quality-title
+          margin-bottom: 15px
+
+
+
+
+
+
+
+
 // contact
 .container .border-m
   border-radius 15px
@@ -678,7 +702,6 @@ ul
 
 .contact
   margin 20px 20px
-  background color-white
   text-align center
 
 .d-flex-contact
@@ -729,8 +752,6 @@ aside
 
     #bpriva
       width 100%
-      background-color color-first
-      color color-white
       padding 14px 20px
       margin 8px 0
       border none
@@ -829,6 +850,7 @@ aside
     display none
     width  70%
     margin auto
+    margin-top:15px
 
 .sliderS
   height: auto
@@ -869,7 +891,6 @@ aside
   height  fit-content
   padding-top  40px
   font-family fontfam3
-  color color-black
 
 .serviceS
   margin-top 100px
@@ -879,7 +900,6 @@ aside
   flex-direction  column
   justify-content  center
   align-items  center
-  background  color-white
   padding-left  30px
   padding-right  30px
 
@@ -906,8 +926,6 @@ aside
 .title-text
   width  90%
   padding 10px
-  color color-black
-  background  color-white
   margin-top -20px
   text-align  left
   h2
@@ -925,8 +943,6 @@ aside
 .services-list
   width  100%
   padding 10px
-  color color-black
-  background  rgb(255, 255, 255)
   margin-top 20px
   text-align  left
   .serviceS-List
@@ -934,14 +950,12 @@ aside
       width  100%
     .slist
       list-style   disc
-      color color-first
       margin-bottom  20px
       margin-left 20px
       a
         font-size  15px
         font-weight  800
         line-height   -10px;
-        color color-first
       p
 .wrapcontent
   width  90%
@@ -951,8 +965,6 @@ aside
 .text
   width  90%
   padding 10px
-  color color-black
-  background  color-white
   border-radius 20px
   p
     font-size 14px
@@ -962,7 +974,6 @@ aside
 .service
   width  100%
   height  auto
-  background  color-white
   text-align  center
   @media tablet
     display  flex
@@ -976,7 +987,6 @@ aside
 .service2
   width  100%
   height  auto
-  background  color-white
   text-align  center
   display  flex
   flex-direction  column-reverse
@@ -1016,7 +1026,6 @@ aside
 
 
 .service-texto
-  background  color-first
   width  100%
   margin auto
   padding  50px 0px
@@ -1028,7 +1037,6 @@ aside
 .text-title
   width  90%
   margin auto
-  color color-white
   font-weight  700
   h2
     margin-bottom  20px
@@ -1056,7 +1064,6 @@ aside
   align-items  center
   text-align  left
   padding  50px 70px
-  color color-black
   @media movil
     font-size 22px
   @media tablet
@@ -1178,26 +1185,21 @@ ul
   font-size: 19px
   margin-bottom: 10px
   text-align: center
-  h1
-    color color-first
 .text-post
   font-size: 18px
   text-align: left
   p
     margin-bottom: 20px
 .subtitle-post
-  color color-black
   text-align: left
   h2
     margin-top 70px
   h3
     margin-top 70px
-    color color-first
 .list-text-post
   margin-bottom 40px
   font-size: 18px
   text-align: left
-  color color-black
   ul
     padding: 0px 20px
     .post-list
