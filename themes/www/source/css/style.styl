@@ -284,6 +284,8 @@ body
           text-align left
 
         .continue
+          display: flex
+          text-decoration: none
           width fit-content
           background-color color-first
           font-size 10px
@@ -296,6 +298,7 @@ body
           font-weight 600
           text-transform uppercase
           text-decoration: none
+          font-family: Arial, Helvetica, sans-serif
 
       hr
         width 50%
@@ -481,7 +484,7 @@ body
 
 //basics
 
-.banner-index
+.banner-text-4
   width  100%
   display  flex
   flex-direction  column
@@ -493,7 +496,7 @@ body
     font-size 22px
   @media tablet
     font-size 25px
-  h2
+  h2,h3,h4,h5,h6
     margin-bottom: 20px
     color color-first
 
@@ -534,7 +537,7 @@ ul
         content   '•'
         margin-right  10px
 
-.banner-text2
+.banner-text-2
   width  100%
   height  fit-content
   text-align  center
@@ -549,11 +552,12 @@ ul
     margin auto
     @media movil
       width  45%
-    h2
+    h2,h3,h4,h5,h6
+      color color-first
       margin 20px
+      font-size font-xl
     p
-      font-size: font-s
-
+      font-size font-s
 
   .text-img
     width  90%
@@ -672,16 +676,23 @@ ul
       margin-left auto
       margin-right:  auto
       height: auto
-      width 50%
+      width 100%
       margin-bottom: 40px
       display: flex
       @media tablet
-       width 33.33333%
-        
+        width 50%
+      @media escritorio-s  
+        width 33.333333%
       .quality-left
+        width 30%
         margin-left auto
         margin-right:  auto
         margin-top 10px
+        svg, img
+          max-width 50px
+          max-height 40px
+          fill color4
+
       .quality-right
         text-align: left
         width 70%
@@ -802,15 +813,15 @@ aside
   display  block
   width 100%
   text-align  center
-
-  img
-    width  90%
-
-  .text-left
+  h2
+    font-size: 200%
+    font-family: fontfam4
     margin  0px 5%
     text-align  left
-    p
-      margin-bottom: 10px
+  img
+    width  90%
+  p
+    margin-bottom: 0% !important
 
 
 // Sliders

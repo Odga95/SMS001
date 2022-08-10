@@ -7,10 +7,10 @@ header
             #menuIcon.fa-solid.fa-bars.fa-2x
             ul#menuList.d-flex-list
                 li
-                    a.link-style(href="/index", onClick='return true') Home
-                #subMenu.list-submenu
-                    .subMenu
-                        a.link-style(href="/services", onClick='return true') Services
+                    a.subMenu.link-style(href="/index", onClick='return true') Home
+                li.list-submenu
+                    a.subMenu.link-style(href="/services", onClick='return true') Services
+                        
                         #subMenu.fa-solid.fa-angle-down
                 
                     ul#subMenuList.display-none.absolute
