@@ -90,7 +90,6 @@ function showDivs(n) {
     }
 }
 
-
 //SLIDER TESTIMONIALS
 
 var slideIndexTestimonial = 1;
